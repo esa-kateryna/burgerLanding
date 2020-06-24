@@ -14,7 +14,7 @@ gulp.task('html', function(){
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/**/*.scss')
-        .pipe(autoprefixer({browsers: ['last 3 versions']}))
+        //.pipe(autoprefixer({browsers: ['last 3 versions']}))
         .pipe(scss())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
