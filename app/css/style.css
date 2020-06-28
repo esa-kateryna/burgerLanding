@@ -79,7 +79,7 @@ a {
     display: flex;
     flex-direction: row; }
     .main-content .row1 .main-content_first {
-      max-width: 748px;
+      max-width: 788px;
       min-height: 360px;
       padding: 20px;
       margin-right: 30px;
@@ -88,6 +88,18 @@ a {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
+      .main-content .row1 .main-content_first .first_inner {
+        max-width: 257px;
+        margin-left: 464px; }
+        .main-content .row1 .main-content_first .first_inner .main-content_first_label {
+          text-align: center; }
+        .main-content .row1 .main-content_first .first_inner .main-content_first_title {
+          text-align: center;
+          font-size: 24px;
+          text-transform: uppercase;
+          margin-bottom: 20px; }
+        .main-content .row1 .main-content_first .first_inner .main-content_first_text {
+          font-size: 16px; }
     .main-content .row1 .main-content_second {
       max-width: 360px;
       min-height: 360px;
@@ -96,7 +108,15 @@ a {
       background-image: url(../img/burger2.png);
       background-repeat: no-repeat;
       background-size: inherit;
-      background-position: center; }
+      background-position: center;
+      position: relative; }
+      .main-content .row1 .main-content_second .main-content_second_label {
+        margin-top: -20px; }
+      .main-content .row1 .main-content_second .main-content_second_text {
+        font-size: 17px;
+        max-width: 165px;
+        margin-top: 10px;
+        margin-right: 168px; }
   .main-content .row2 {
     display: flex;
     flex-direction: row;
