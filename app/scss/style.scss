@@ -130,6 +130,7 @@ a {
     max-width: 360px;
     min-height: 360px;
     padding: 20px;
+    margin-right: -30px;
     margin-bottom: 28px;
     background-image: url(../img/burger2.png);
     background-repeat: no-repeat;
@@ -139,11 +140,25 @@ a {
     .main-content_second_label {
       margin-top: -20px;
     }
+    .main-content_second_label::before {
+      content: url(../img/burger.png);
+      position: absolute;
+      top: 5%;
+      left: 17%;
+    }
+    .main-content_second_label::after {
+      content: "Signature";
+      font-size: 17px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 11%;
+      top: 19%;
+    }
     .main-content_second_text {
       font-size: 17px;
       max-width: 165px;
       margin-top: 10px;
-      margin-right: 168px;
+      margin-right: 175px;
     }
   }
 }
@@ -156,13 +171,39 @@ a {
     .main-content_third {
     max-width: 554px;
     min-height: 360px;
-    padding: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
     background-image: url(../img/burger3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    .main-content_third_label {
+      position: absolute;
+      top: 20px;
+    }
+    .main-content_third_label::before {
+      content: "Classic";
+      font-size: 22px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 15%;
+      top: 11%;
+    }
+    .third_inner {
+      max-width: 554px;
+      min-height: 160px;
+      background-color: rgba(147, 79, 50, 0.8);
+      margin-top: 200px;
+      padding: 20px;
+      .main-content_third_title {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .main-content_third_subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
   }
   .main-content_fourth {
     max-width: 557px;
@@ -173,6 +214,10 @@ a {
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: center;
+    .main-content_fourth_title {
+      font-size: 24px;
+      font-weight: 700;
+    }
   }
 }
 }
