@@ -21,7 +21,7 @@ gulp.task('scss', function(){
 });
 
 gulp.task('css', function(){
-    return gulp.src('app/css/libs.css')
+    return gulp.src(['app/css/libs.css', 'node_modules/normalize.css'])
         .pipe(cssnano())
         .pipe(rename({'suffix' : '.min'}))
         .pipe(gulp.dest('app/css'))

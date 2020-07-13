@@ -281,4 +281,186 @@ a {
 .slide {
 
 }
+
+.menu-links_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  p {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f1f1f1;
+    padding-left: 85px;
+  }
+  
+
+  .menu-link_item1 {
+    background-image: url(../img/menuBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 95px;
+    margin-right: 30px;
+    position: relative;
+    &::before {
+      content: url(../img/menuShape.png);
+      position: absolute;
+      top: 47px;
+    }
+  }
+  .menu-link_item2 {
+    background-image: url(../img/drinksBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 95px;
+    margin-right: 30px;
+    position: relative;
+    &::before {
+      content: url(../img/drinksShape.png);
+      position: absolute;
+      top: 43px;
+    }
+  }
+  .menu-link_item3 {
+    background-image: url(../img/sidesBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 95px;
+    position: relative;
+    &::before {
+      content: url(../img/sidesShape.png);
+      position: absolute;
+      top: 47px;
+    }
+  }
+}
+
+.menu-links_bottom {
+  background-image: url(../img/servingSinceBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 68px;
+  padding-bottom: 60px;
+  .menu-links_bottom_titles {
+    text-align: center;
+    .menu-links_bottom_title{
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .menu-links_bottom_subtitle {
+      font-size: 17px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+footer {
+  background-color: #454646;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  .social {
+    max-width: 238px;
+    margin-right: 150px;
+  }
+  .social-links a{
+    background-color: #4d5154;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .facebook::before {
+    content: url(../img/facebook.png);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  .twitter::before {
+    content: url(../img/twitter.png);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .instagram::before {
+    content: url(../img/instagram.png);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .copy {
+    font-size: 12px;
+    color: #bec5cd;
+  }
+  .contact {
+    max-width: 238px;
+    margin-right: 150px;
+  }
+  .contact_title {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .contact_mail {
+    font-size: 16px;
+    line-height: 24px;
+    color: #bec5cd;
+    margin-bottom: 20px;
+  }
+  .contact_address {
+    font-size: 16px;
+    line-height: 24px;
+    color: #bec5cd;
+    margin-bottom: 20px;
+  }
+  .subscribe {
+    max-width: 260px;
+  }
+  .subscribe_title {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .form-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #bec5cd;
+    margin-bottom: 20px;
+  }
+  .sudscribe-form input[type="email"] {
+    background-color: #454646;
+    border: 2px solid #646667;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-right: 45px;
+    padding-bottom: 12px;
+  }
+  .sudscribe-form input[type="button"] {
+    background-color: #646667;
+    border: 2px solid #646667;
+    width: 41px;
+    height: 46px;
+    margin-left: -46px;
+    position: relative;
+    
+  }
+
+  .subscribeicon {
+    //margin-left: -40px;
+    //z-index: 10;
+  }
+}
  
